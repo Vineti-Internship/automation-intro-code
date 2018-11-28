@@ -1,0 +1,43 @@
+{
+  "name": "qa_tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "automation": "NODE_PATH=. wdio wdio.conf.js --suite test",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "dotenv": "^6.0.0",
+    "eslint": "4.3.0",
+    "eslint-config-semistandard": "11.0.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-loader": "1.9.0",
+    "eslint-plugin-babel": "4.1.2",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-node": "5.1.1",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1",
+    "eslint-plugin-webdriverio": "1.0.1",
+    "form-data": "^2.3.3",
+    "mocha": "^5.2.0",
+    "moment": "^2.22.2",
+    "nightwatch": "^0.9.21",
+    "wdio": "^2.0.2",
+    "wdio-allure-reporter": "^0.6.2",
+    "wdio-mocha-framework": "^0.5.13",
+    "wdio-spec-reporter": "^0.1.4",
+    "wdio-testrail-reporter": "^1.1.5"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "fibers": "^3.0.0",
+    "jsonfile": "^4.0.0",
+    "moment-timezone": "0.5.16",
+    "node-fetch": "1.7.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
